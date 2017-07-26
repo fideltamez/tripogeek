@@ -6,6 +6,7 @@
     background-color: #2ECC71;
 }
 
+//ESTILOS DEL HEADER
 header {
     width: 98%;
     margin: auto;
@@ -16,6 +17,7 @@ header {
     justify-content: center;
     align-content: space-between;
     
+//  ESTILOS DEL LOGO
     .logo {
         width: 200px;
         height: 100px;
@@ -24,10 +26,12 @@ header {
         
     }
     
+//  ESTILOS DEL MENU_NAV
     #menu_nav {
         display: none;
     }
     
+//  ESTILOS DEL MENU
     #menu {
         background-color: #2ecc71;
         width: 100%;
@@ -47,6 +51,7 @@ header {
         
     }
     
+//    ESTILOS DEL UL
     ul {
         width: 100%;
         position: absolute;
@@ -59,7 +64,7 @@ header {
         transition: all 1.5s;
         font-family: advent-pro;
         
-        
+//        ESTILOS DEL LI
         li {
             list-style: none;
             border-bottom: 1px solid rgba(255,255,255,0.40);
@@ -68,7 +73,8 @@ header {
             &:first-child {
                 border-top: 1px solid rgba(255,255,255,0.40);
             }
-
+            
+//            ESTILOS DEL A
             a {
                 padding-left: 20px;
                 width: 100%;
@@ -89,11 +95,12 @@ header {
         }
 }
 
+//ESTILOS CHECKED DEL MENU_NAV
 #menu_nav:checked ~ nav ul {
             left: 0;
 }
     
-
+//MEDIAQUERY 1024 PX
 @media (min-width: 1024px) {
     
     .header_container {
