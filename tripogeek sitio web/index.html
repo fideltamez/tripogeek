@@ -1,109 +1,43 @@
 <!doctype html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="//use.edgefonts.net/lancelot;junge;merriweather;neuton.js"></script>
-    <title>Comunidad Tripogeek</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="css/estilos.css">
+<title>Documento sin título</title>
 </head>
 <body>
-
-<!--CONTENEDOR GENERAL-->
-
-<div class="general_container">
-    
-    <!--HEADER-CONTAINER-->
-    
-    <div class="header_container">
-        <header>
-            
-            <!--LOGOTIPO TRIPOGEEK-->
-            
-            <div class="logo">
-                <img src="img/logo_tripogeek_ok.png" width="200" alt="Logo_Tripogeek">
-            </div>
-            
-            <!--MENU DE NAVEGACION-->
-            
-            <input type="checkbox" id="menu_nav">
-            <label for="menu_nav" id="menu">Menú</label>
-            
-            <nav>
-                <ul>
+    <header>
+        <div class="contenedor-header">
+            <img class="logo" src="img/logo_tripogeek.png" alt="logotipo Tripogeek">
+            <img class="btn-menu" id="btn-menu" src="img/icono_burguer_menu.png" alt="Menu">
+            <nav id="menu-nav" class="menu-nav">
+                <ul class="nav">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Clientes</a></li>
                     <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Clientes</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
-        </header>
-    </div>
-    
-    <!--BLOG CONTAINER-->
-    
-    <div class="blog_container">
+        </div>
+    </header>
+    <div class="slider">
         
-        <!--SECTION DEL BLOG-->
+    </div>
+    <div class="main_content">
         
-        <section class="blog">
-            <h1>Nuestro Blog</h1>
-            <article>
-                <h2>Lorem ipsum.</h2>
-                <img src="img/pet-blog1.jpg" alt="">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet et harum voluptatum, sequi. Vitae tempore nisi, explicabo aperiam ipsam ex.
-                </p>
-                <div class="btn_leermas">Leer mas ...</div>
-            </article>
-            <article>
-                <h2>Lorem ipsum.</h2>
-                <img src="img/pet-blog2.jpg" alt="">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet et harum voluptatum, sequi. Vitae tempore nisi, explicabo aperiam ipsam ex.
-                </p>
-                <div class="btn_leermas">Leer mas ...</div>
-            </article>
-            <article>
-                <h2>Lorem ipsum.</h2>
-                <img src="img/pet-blog3.jpg" alt="">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet et harum voluptatum, sequi. Vitae tempore nisi, explicabo aperiam ipsam ex.
-                </p>
-                <div class="btn_leermas">Leer mas ...</div>
-            </article>
-        </section>
     </div>
-       
-    <!--FOOTER CONTAINER-->
-    
-    <div class="footer_container">
-        <footer>
-            <div class="copy">
-                Todos los derechis reservados &copy;
-            </div>
-            <div class="sociales">
-                <div class="icon fa fa-facebook-official">
-                    <a href="#"></a>
-                </div>
-                <div class="icon fa fa-instagram">
-                    <a href="#"></a>
-                </div>
-                <div class="icon fa fa-twitter-square">
-                    <a href="#"></a>
-                </div>
-                <div class="icon fa fa-google-plus-square">
-                    <a href="#"></a>
-                </div>
-            </div>
-        </footer>
-    </div>
-</div>
-
-
+    <footer>
+        
+    </footer>
+    <script>
+        var menu = document.getElementById('menu-nav');
+        var mostrar = document.getElementById('btn-menu');
+        
+        mostrar.addEventListener('click', function(){
+            menu.classList.toggle('mostrar');
+        });
+    </script>
 </body>
-
 </html>

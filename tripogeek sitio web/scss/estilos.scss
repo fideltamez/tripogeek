@@ -1,12 +1,51 @@
-/* CSS Document */
-
-@import "header";
-@import "blog";
-@import "footer";
+/*-------------- RESET -------------- */
 
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif, advent-pro, arizonia, cabin-sketch;
+    font-family: sans-serif;
 }
 
+
+/* -------------- IMPORT SCSS -------------- */
+
+@import "_header";
+@import "_slider";
+@import "_main-content";
+@import "_footer";
+
+/* -------------- ESTILOS BASICOS -------------- */
+
+/* -------------- PALETA DE COLORES -------------- */
+
+$colorNegro: #000;
+$colorVerde: #2ecc71;
+$colorEnlace: #009245;
+$colorTextos: #4d4d4d;
+$colorTextos_footer: #838383;
+$colorFooter: #222;
+
+/* -------------- ESTILOS HEADER -------------- */
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: $colorNegro;
+}
+
+.slider {
+    width: 100%;
+    height: 540px;
+    background-color: $colorVerde;
+}
+
+.main_content {
+    width: 100%;
+    height: 885px;
+}
+
+footer {
+    width: 100%;
+    height: 575px;
+    background-color: $colorFooter
+}
